@@ -4,11 +4,13 @@ This project can be used to add pagination functionality to a website.
 ## Features
 * Go to first/last page
 * Go to next/previous page
-* Automatic reading of parameters from querystring
-* Custom url
-* Maximum number of pagination buttons
-* Translation can be injected
-* Option to display the Number of pages and records 
+* Automatic reading of parameters: you do not need to build the URL, it will be automatically built from the current request parameters
+* Custom url schema: when automatic reading of parameters is not desired, you may provide a custom url schema and the url will be created as your needs
+* Button pagination: for example, you may set the maximum number of buttons to 5 and only this number of buttons will be displayed
+* Button wrap: when button pagination is not desired you can just let the buttons wrap to the next line
+* Summary: when this is enabled, the number of pages and records are shown as a label
+* Translation can be injected: you may customize the summary and the buttons (text-only)
+* Custom css: you may change the button design with custom css
 
 ## Example 1
 ![](https://github.com/fernandohu/Paginator/blob/master/images/image01.png)
