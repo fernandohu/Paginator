@@ -154,7 +154,7 @@ class Paginator
 
             $html .= '
         <li' . $class . '>
-            <a href="' . $this->getUrl($page) . '">' . $translation['Next'] . '</a>
+            <a href="' . $this->getUrl($page + 1) . '">' . $translation['Next'] . '</a>
         </li>
         <li' . $class . '>
             <a href="' . $this->getUrl($numberOfPages - 1) . '">' . $translation['Last'] . '</a>
