@@ -25,6 +25,20 @@ $paginator->render(true);
 Passing true to render() tells the method to display the number of pages and records just after the pagination.
 The paginator has three buttons because the default number of pages per page is set to 20 and current page is set to 1.
 
+## Example 2
+![](https://github.com/fernandohu/Paginator/blob/master/images/image02.png)
+This can be obtained with the following code:
+```php
+use fhu\Paginator\Paginator;
+
+$paginator = new Paginator();
+$paginator->setCount(1000);
+$paginator->setEntriesPerPage(11);
+$paginator->setMaxNumberOfPaginationButtons(10);
+```
+You must run it in a get request with 'page' parameter set to 15.
+Note that as the number of pagination buttons is 11, only the same number of pages are displayed. 
+
 ## Css
 You might customize the following CSS to your needs:
 ```css
