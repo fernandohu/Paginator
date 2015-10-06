@@ -10,6 +10,21 @@ This project can be used to add pagination functionality to a website.
 * Translation can be injected
 * Option to display the Number of pages and records 
 
+## Example 1
+![](https://github.com/fernandohu/Paginator/blob/master/images/image01.png)
+
+This can be obtained with the following code:
+```php
+use fhu\Paginator\Paginator;
+
+$paginator = new Paginator();
+$paginator->setCount(60);
+$paginator->render(true);
+```
+
+Passing true to render() tells the method to display the number of pages and records just after the pagination.
+The paginator has three buttons because the default number of pages per page is set to 20 and current page is set to 1.
+
 ## Css
 You might customize the following CSS to your needs:
 ```css
