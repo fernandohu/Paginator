@@ -75,10 +75,6 @@ class Paginator
      */
     public function render($boolShowSummary = false)
     {
-        if (!$this->getCount()) {
-            throw new NumberOfEntriesNotSpecifiedException('You must call setCount() to set Paginator\'s number of entries.');
-        }
-
         $numberOfEntries        = $this->getCount();
         $currentPage            = $this->getPageNumber();
         $numberOfEntriesPerPage = $this->getNumberOfEntriesPerPage();
